@@ -1,0 +1,97 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-12 col-md-auto">
+            <div class="row justify-content-center">
+                <p></p>
+            </div>
+            <!-- Default form subscription -->
+            <form class="text-center border border-light p-5">
+
+                <a class="navbar-brand" routerLink="/">
+                    <img src="../../assets/aliesell.png" class="rounded float-left" alt="Responsive image">
+                </a>
+
+                <h5>
+                    <strong class="text-info">Registro</strong>
+                </h5>
+
+                <div class="form-row">
+                    <div class="col">
+                        <!-- First name -->
+                        <div class="md-form">
+                            <input type="text" id="materialRegisterFormFirstName" [(ngModel)]="user.nombre" [ngModelOptions]="{standalone: true}" class="form-control" mdbInput>
+                            <label for="materialRegisterFormFirstName">Nombre</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Last name -->
+                        <div class="md-form">
+                            <input type="text" id="materialRegisterFormLastName" [(ngModel)]="user.apellidos" [ngModelOptions]="{standalone: true}" class="form-control" mdbInput>
+                            <label for="materialRegisterFormLastName">Apellidos</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-mail -->
+                <div class="md-form mt-0">
+                    <input type="email" id="materialRegisterFormEmail" [(ngModel)]="user.correo" [ngModelOptions]="{standalone: true}" class="form-control" mdbInput>
+                    <label for="materialRegisterFormEmail">E-mail</label>
+                </div>
+
+                <!-- Password -->
+                <div class="md-form">
+                    <input type="password" id="materialRegisterFormPassword" [(ngModel)]="user.contrasenia" [ngModelOptions]="{standalone: true}" class="form-control"
+                        aria-describedby="materialRegisterFormPasswordHelpBlock" mdbInput>
+                    <label for="materialRegisterFormPassword">Contraseña</label>
+                    <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                        Mínimo: 8 caracteres, 1 letra
+                        mayúscula,1 letra minúscula,1 símbolo y 1 número.
+                    </small>
+                </div>
+
+                <!-- Phone number -->
+                <div class="md-form">
+                    <input type="number" id="materialRegisterFormPhone" [(ngModel)]="user.telefono" [ngModelOptions]="{standalone: true}" class="form-control"
+                        aria-describedby="materialRegisterFormPhoneHelpBlock" mdbInput>
+                    <label for="materialRegisterFormPhone">Telefono</label>
+                </div>
+
+                <!-- Género -->
+                <!-- Material unchecked -->
+                <div>
+                    <label class="form-text text-muted mb-4">Genero</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" value="1" [(ngModel)]="user.genero" [ngModelOptions]="{standalone: true}" class="form-check-input" id="materialChecked" name="generoRadios" checked mdbInput>
+                    <label class="form-check-label" for="materialChecked">Hombre</label>
+                </div>
+                
+                <!-- Material checked -->
+                <div class="form-check">
+                    <input type="radio" value="2" [(ngModel)]="user.genero"
+                    [ngModelOptions]="{standalone: true}" class="form-check-input" id="materialUnchecked" name="generoRadios"  mdbInput>
+                    <label class="form-check-label" for="materialUnchecked">Mujer</label>
+                </div>
+
+                <!-- Date of birth -->
+                <div class="md-form" >
+                    <input type="date" id="input" [(ngModel)]="user.fechaNacimiento" [ngModelOptions]="{standalone: true}" class="form-control" mdbInput>
+                    <label for="input" >Fecha de nacimiento</label>
+                </div>
+
+                <!-- Direccion -->
+                <div class="md-form">
+                    <input type="text" id="materialRegisterFormDireccion" [(ngModel)]="user.direccion" [ngModelOptions]="{standalone: true}" class="form-control" mdbInput>
+                    <label for="materialRegisterFormDireccion">Dirección</label>
+                </div>
+
+                <!-- Sign up button -->
+                <button mdbBtn color="default"  routerLink="/" outline="true" block="true" class="my-4 waves-effect z-depth-0"
+                    mdbWavesEffect type="submit" (click)="saveUser()">Registrar</button>
+
+
+            </form>
+            <!-- Default form subscription -->
+        </div>
+    </div>
+</div>

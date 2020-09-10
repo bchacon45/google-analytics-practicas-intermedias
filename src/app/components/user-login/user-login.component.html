@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+            <div class="col-12 col-md-auto">
+                    <div class="row justify-content-center">
+                            <p></p>
+                    </div>
+                    <!-- Default form subscription -->
+                    <form class="text-center border border-light p-5">
+
+                        <a class="navbar-brand" routerLink="/">
+                                <img src="../../assets/aliesell.png" class="rounded float-left" alt="Responsive image">
+                            </a>
+
+                            <br />
+                            <br />
+
+                            <!-- Email -->
+                            <input type="email" id="defaultSubscriptionFormEmail" [(ngModel)]="userCred.email" [ngModelOptions]="{standalone: true}" class="form-control mb-4"
+                                    placeholder="E-mail">
+
+                            <!-- PASS -->
+                            <input type="password" id="defaultLoginFormPassword" [(ngModel)]="userCred.pass" [ngModelOptions]="{standalone: true}" class="form-control mb-4"
+                                    placeholder="Contraseña">
+                            <div class="d-flex justify-content-around">
+                                    <div>
+                                            <!-- Remember me -->
+                                            <mdb-checkbox [default]="true">Recordar mis credenciales</mdb-checkbox>
+                                    </div>
+                                    <p style="color:white;">Espacio.</p>
+                                    <div>
+                                            <!-- Forgot password -->
+                                            <a routerLink="/recover-password">Olvide mi contraseña</a>
+                                    </div>
+                            </div>
+
+                            <!-- Sign in button -->
+                            <button mdbBtn color="default" block="true" class="my-4" type="submit" (click)="login()">Entrar</button>
+
+
+
+                    </form>
+                    <!-- Default form subscription -->
+            </div>
+    </div>
+</div>
