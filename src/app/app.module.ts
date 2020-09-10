@@ -14,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 import { UserLoginComponent } from './components/user-login/user-login.component';
 import { AccessDeniedComponent } from './components/access-denied/access-denied.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { CompraExitosaComponent } from './compra-exitosa/compra-exitosa.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { ProductListComponent } from './components/product-list/product-list.com
     HomeComponent,
     UserLoginComponent,
     AccessDeniedComponent,
-    ProductListComponent
+    ProductListComponent,
+    CompraExitosaComponent
   ],
   imports: [
     BrowserModule,

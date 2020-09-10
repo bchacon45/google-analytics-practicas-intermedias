@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { UserLoginComponent } from './components/user-login/user-login.component';
 import { AccessDeniedComponent } from './components/access-denied/access-denied.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { CompraExitosaComponent } from './compra-exitosa/compra-exitosa.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'tienda',
     component: ProductListComponent
+  },
+  {
+    path: 'c-exitosa',
+    component: CompraExitosaComponent
   }
 ];
 
