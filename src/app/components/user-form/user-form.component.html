@@ -19,14 +19,14 @@
                     <div class="col">
                         <!-- First name -->
                         <div class="md-form">
-                            <input type="text" id="materialRegisterFormFirstName" [(ngModel)]="user.nombre" [ngModelOptions]="{standalone: true}" class="form-control" mdbInput>
+                            <input type="text" id="materialRegisterFormFirstName"  class="form-control" mdbInput>
                             <label for="materialRegisterFormFirstName">Nombre</label>
                         </div>
                     </div>
                     <div class="col">
                         <!-- Last name -->
                         <div class="md-form">
-                            <input type="text" id="materialRegisterFormLastName" [(ngModel)]="user.apellidos" [ngModelOptions]="{standalone: true}" class="form-control" mdbInput>
+                            <input type="text" id="materialRegisterFormLastName"  class="form-control" mdbInput>
                             <label for="materialRegisterFormLastName">Apellidos</label>
                         </div>
                     </div>
@@ -34,13 +34,13 @@
 
                 <!-- E-mail -->
                 <div class="md-form mt-0">
-                    <input type="email" id="materialRegisterFormEmail" [(ngModel)]="user.correo" [ngModelOptions]="{standalone: true}" class="form-control" mdbInput>
+                    <input type="email" id="materialRegisterFormEmail" class="form-control" mdbInput>
                     <label for="materialRegisterFormEmail">E-mail</label>
                 </div>
 
                 <!-- Password -->
                 <div class="md-form">
-                    <input type="password" id="materialRegisterFormPassword" [(ngModel)]="user.contrasenia" [ngModelOptions]="{standalone: true}" class="form-control"
+                    <input type="password" id="materialRegisterFormPassword"  class="form-control"
                         aria-describedby="materialRegisterFormPasswordHelpBlock" mdbInput>
                     <label for="materialRegisterFormPassword">Contraseña</label>
                     <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
@@ -51,7 +51,7 @@
 
                 <!-- Phone number -->
                 <div class="md-form">
-                    <input type="number" id="materialRegisterFormPhone" [(ngModel)]="user.telefono" [ngModelOptions]="{standalone: true}" class="form-control"
+                    <input type="number" id="materialRegisterFormPhone" class="form-control"
                         aria-describedby="materialRegisterFormPhoneHelpBlock" mdbInput>
                     <label for="materialRegisterFormPhone">Telefono</label>
                 </div>
@@ -62,32 +62,32 @@
                     <label class="form-text text-muted mb-4">Genero</label>
                 </div>
                 <div class="form-check">
-                    <input type="radio" value="1" [(ngModel)]="user.genero" [ngModelOptions]="{standalone: true}" class="form-check-input" id="materialChecked" name="generoRadios" checked mdbInput>
+                    <input type="radio" value="1"  class="form-check-input" id="materialChecked" name="generoRadios" checked mdbInput>
                     <label class="form-check-label" for="materialChecked">Hombre</label>
                 </div>
                 
                 <!-- Material checked -->
                 <div class="form-check">
-                    <input type="radio" value="2" [(ngModel)]="user.genero"
-                    [ngModelOptions]="{standalone: true}" class="form-check-input" id="materialUnchecked" name="generoRadios"  mdbInput>
+                    <input type="radio" value="2" 
+                    class="form-check-input" id="materialUnchecked" name="generoRadios"  mdbInput>
                     <label class="form-check-label" for="materialUnchecked">Mujer</label>
                 </div>
 
                 <!-- Date of birth -->
                 <div class="md-form" >
-                    <input type="date" id="input" [(ngModel)]="user.fechaNacimiento" [ngModelOptions]="{standalone: true}" class="form-control" mdbInput>
+                    <input type="date" id="input"class="form-control" mdbInput>
                     <label for="input" >Fecha de nacimiento</label>
                 </div>
 
                 <!-- Direccion -->
                 <div class="md-form">
-                    <input type="text" id="materialRegisterFormDireccion" [(ngModel)]="user.direccion" [ngModelOptions]="{standalone: true}" class="form-control" mdbInput>
+                    <input type="text" id="materialRegisterFormDireccion"  class="form-control" mdbInput>
                     <label for="materialRegisterFormDireccion">Dirección</label>
                 </div>
 
                 <!-- Sign up button -->
                 <button mdbBtn color="default"  routerLink="/" outline="true" block="true" class="my-4 waves-effect z-depth-0"
-                    mdbWavesEffect type="submit" (click)="saveUser()">Registrar</button>
+                    mdbWavesEffect type="submit" >Registrar</button>
 
 
             </form>

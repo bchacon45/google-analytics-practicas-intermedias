@@ -12,25 +12,10 @@ export class ProductListComponent implements OnInit {
 
   products: any = [];
 
-  constructor(private usersService: UsersService, private router: Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
-    
-    this.getProductsList();
-  }
 
-  getProductsList():void{
-    this.usersService.getProducts().subscribe(
-      res => {
-        this.products = res;
-        //console.log(this.users );
-      },
-      err => console.error(err)
-    );
-  }
-
-  verIndividual(product: any){
-    this.router.navigate(['/product'], { queryParams: {product}, skipLocationChange: true});
   }
 
 }
